@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem;
+}
+
+.card{
+    display: flex;
+    color: white;
+    background: hsl(244, 38%, 16%);
+    max-width: 1440px;
+    border-radius: 1rem;
+    height: 460px;
+}
+
+.right img{
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    height: 460px;
+}
+
+.left{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.left h1{
+    font-family: inter;
+    font-size: 2.1rem;
+}
+
+.left .highlight{
+    font-family: inter;
+    font-size: 2.1rem;
+    color: hsl(277, 64%, 61%);
+}
+
+.left p{
+    margin-top: 2rem;
+    font-family: inter;
+    font-size: .8rem;
+    line-height: 1.5rem;
+    color: rgb(160, 160, 160);
+}
+
+.left .footer{
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.left .footer span{
+    font-size: .9rem;
+    text-transform: uppercase;
+    color:rgb(160, 160, 160) ;
+    font-weight: 500;
+}
+
+@media (max-width:660px) {
+    .card{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 1050px;
+        width: 400px;
+        margin: 2rem;
+        border-radius: 0;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+    }   
+    .body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 375px;
+    }
+    .right img{
+        width: 400px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 0;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+    }
+    .container{
+        margin: 2rem;
+    }
+    .left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .left .footer{
+        display: flex;
+        flex-direction: column;
+        gap: -2rem;
+    }
+    .left p{
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+}
